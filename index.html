@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinaka Vertex - Building Software Solutions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+
+        nav {
+            background-color: #f8f9fa;
+            padding: 1rem;
+            text-align: center;
+            border-bottom: 2px solid #667eea;
+        }
+
+        nav a {
+            margin: 0 1.5rem;
+            text-decoration: none;
+            color: #667eea;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #764ba2;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin: 3rem 0;
+            padding: 2rem;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            color: #667eea;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+
+        .mission {
+            text-align: center;
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+        }
+
+        .mission p {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .offerings {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .offering-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .offering-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(102, 126, 234, 0.15);
+        }
+
+        .offering-card h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .offering-card p {
+            color: #666;
+            line-height: 1.7;
+        }
+
+        .goals {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .goal-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .goal-item h4 {
+            color: #764ba2;
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+        }
+
+        .goal-item p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        footer {
+            background-color: #2d3436;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+        }
+
+        .highlight {
+            color: #667eea;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav a {
+                display: block;
+                margin: 0.5rem 0;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Pinaka Vertex</h1>
+        <p>Building Software Solutions for Everyday Tasks</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#offerings">What We Do</a>
+        <a href="#goals">Our Goals</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="about" class="mission">
+            <h2>About Pinaka Vertex</h2>
+            <p>
+                At Pinaka Vertex, we are passionate about creating innovative software solutions that make a real
+                difference in people's lives.
+                Whether through open source contributions that benefit the entire community or custom closed source
+                solutions tailored to specific needs,
+                we're committed to excellence, quality, and user satisfaction.
+            </p>
+        </section>
+
+        <section id="offerings">
+            <h2>What We Do</h2>
+            <div class="offerings">
+                <div class="offering-card">
+                    <h3>📂 Open Source Software</h3>
+                    <p>
+                        We develop and maintain open source projects that are freely available to the community.
+                        Our open source initiatives focus on solving common problems and providing tools that everyone
+                        can benefit from and contribute to.
+                    </p>
+                </div>
+                <div class="offering-card">
+                    <h3>🔒 Closed Source Solutions</h3>
+                    <p>
+                        We build custom, proprietary software solutions tailored to specific business needs.
+                        These enterprise-grade applications are designed with security, scalability, and performance in
+                        mind.
+                    </p>
+                </div>
+                <div class="offering-card">
+                    <h3>💡 Innovation & Consulting</h3>
+                    <p>
+                        We help organizations modernize their tech stack, improve workflows, and implement cutting-edge
+                        solutions.
+                        Our expertise spans across various technologies and industries.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="goals">
+            <h2>Our Goals</h2>
+            <div class="goals">
+                <div class="goal-item">
+                    <h4>🌍 Community Impact</h4>
+                    <p>
+                        Contribute meaningfully to the open source community and help developers worldwide build better
+                        software.
+                    </p>
+                </div>
+                <div class="goal-item">
+                    <h4>⚡ User Empowerment</h4>
+                    <p>
+                        Create tools and solutions that simplify everyday tasks and empower users to achieve their goals
+                        efficiently.
+                    </p>
+                </div>
+                <div class="goal-item">
+                    <h4>🎯 Quality & Excellence</h4>
+                    <p>
+                        Deliver high-quality, reliable, and maintainable software with exceptional user experience.
+                    </p>
+                </div>
+                <div class="goal-item">
+                    <h4>🚀 Continuous Growth</h4>
+                    <p>
+                        Stay at the forefront of technology trends and continuously innovate to provide cutting-edge
+                        solutions.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <p>
+                Interested in learning more about Pinaka Vertex or discussing a project? We'd love to hear from you!
+                Feel free to reach out through our GitHub repositories or contact us directly.
+            </p>
+            <p style="margin-top: 1rem; text-align: center;">
+                <span class="highlight">GitHub:</span>
+                <a href="https://github.com/pinakavertex" target="_blank"
+                    style="color: #667eea; text-decoration: none;">
+                    github.com/pinakavertex
+                </a>
+            </p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Pinaka Vertex. All rights reserved.</p>
+        <p>Empowering communities through innovative software solutions.</p>
+    </footer>
+</body>
+
+</html>
